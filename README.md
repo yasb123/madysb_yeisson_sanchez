@@ -135,13 +135,13 @@ npm install
 ### 3️⃣ Configurar Firebase
 Crea un archivo `.env.local` con tus variables (ya protegidas):
 ```env
-VITE_FIREBASE_API_KEY=AIzaSyCTqVwhddyyU9-CLRAZmVTuKTurgOhz1Rs
-VITE_FIREBASE_AUTH_DOMAIN=madysb-yeisson-sanchez.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=madysb-yeisson-sanchez
-VITE_FIREBASE_STORAGE_BUCKET=madysb-yeisson-sanchez.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=327544495458
-VITE_FIREBASE_APP_ID=1:327544495458:web:dd4b3342b73f5d3974203b
-VITE_FIREBASE_MEASUREMENT_ID=G-JD2NHME9WP
+VITE_FIREBASE_API_KEY=your_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=000000000000
+VITE_FIREBASE_APP_ID=1:000000000000:web:abcdef0123456789
+VITE_FIREBASE_MEASUREMENT_ID=G-XXXXXXX
 ```
 
 ### 4️⃣ Ejecutar el proyecto
