@@ -1,0 +1,16 @@
+.site-footer{background:#112135;color:#e9eef5;font-family:'Hanken Grotesk',system-ui,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1200px;margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:1fr auto 1fr;gap:2rem;align-items:center}
+.brand-row{display:flex;align-items:center;gap:.6rem;font-family:'Exo',system-ui,sans-serif;font-weight:700}
+.logo-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;background:#2167af;color:#fff;font-weight:800}
+.footer-left p,.footer-right p{margin:.35rem 0}
+.footer-divider{width:1px;height:80px;background:#ffffff33;justify-self:center}
+.socials{display:flex;gap:1rem;margin-top:.75rem}
+.dot{width:28px;height:28px;border-radius:50%;background:#c9cdd3;display:inline-block;transition:transform .15s ease, opacity .15s ease}
+.dot:hover{transform:translateY(-2px);opacity:.9}
+.footer-bottom{border-top:1px solid #ffffff22;max-width:1200px;margin:0 auto;padding:1rem;color:#e9eef5;display:flex;justify-content:space-between;gap:1rem}
+@media (max-width:900px){
+  .footer-inner{grid-template-columns:1fr;gap:1rem;text-align:left}
+  .footer-divider{display:none}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+}
+a{color:inherit}

@@ -1,0 +1,19 @@
+.nav-header{background:#112135;color:#ffffff;position:sticky;top:0;z-index:40}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:'Exo',system-ui,sans-serif;font-weight:700}
+.logo-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;background:#2167af;color:#fff;font-weight:800}
+.brand-text{color:#fff}
+.nav-links{display:flex;align-items:center;gap:1.25rem}
+.nav-links a{color:#d9e4ef;font-weight:600}
+.nav-links a.active{color:#fff}
+.cart-icon{display:inline-flex;align-items:center}
+.hamburger{display:none;background:none;border:none;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0}
+@media (max-width:1024px){
+  .hamburger{display:block}
+  .nav-links{position:fixed;inset:auto 0 0 0;top:56px;background:#112135;flex-direction:column;gap:1rem;padding:1rem;transform:translateY(-120%);transition:.25s ease}
+  .nav-links.open{transform:translateY(0)}
+}
+
+.cart-icon{position:relative;display:inline-flex;align-items:center}
+.cart-dot{position:absolute;top:-2px;right:-2px;width:10px;height:10px;border-radius:50%;background:#e53935;box-shadow:0 0 0 2px rgba(255,255,255,.9)}

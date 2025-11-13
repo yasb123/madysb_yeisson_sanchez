@@ -1,0 +1,110 @@
+.contact-page {
+  background-color: #ffffff;
+  color: #0f2238;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+}
+
+.contact-hero {
+  height: 110px;
+  background-color: #c9cdd3;
+}
+
+.contact-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.contact-form {
+  max-width: 720px;
+  margin: 0 auto 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d7e4;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-textarea {
+  resize: vertical;
+}
+
+.contact-submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.contact-info {
+  max-width: 900px;
+  margin: 18px auto 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #111827;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: 1px solid #0f2238;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  color: #0f2238;
+}
+
+.btn.primary {
+  background-color: #0f2238;
+  color: #ffffff;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 24px 16px 40px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-submit-wrap {
+    justify-content: flex-start;
+  }
+
+  .contact-info {
+    font-size: 11px;
+  }
+}

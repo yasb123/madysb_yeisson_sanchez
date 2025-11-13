@@ -1,0 +1,279 @@
+/* === Estructura general === */
+.pay-page {
+  background: #fff;
+  color: #0f2238;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner gris debajo del menú */
+.pay-hero {
+  height: 110px;
+  background: #c9cdd3;
+  flex-shrink: 0;
+}
+
+/* Contenedor principal centrado */
+.pay-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centrado vertical */
+  text-align: center;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 16px 60px;
+}
+
+/* Secciones internas centradas */
+.pay-header,
+.pay-person-row,
+.pay-card-section,
+.pay-pse-section,
+.pay-secure {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* === Encabezado === */
+.pay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.pay-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.pay-total-box {
+  background: #0f2238;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.pay-total-box span {
+  display: block;
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.pay-total-box strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* === Tipo de persona === */
+.pay-person-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.pay-label {
+  font-weight: 600;
+}
+
+.pay-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pay-radio input {
+  accent-color: #0f2238;
+}
+
+/* === Formulario de tarjeta === */
+.pay-card-section {
+  margin-bottom: 26px;
+}
+
+.pay-card-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.logo-circle.mc {
+  background: radial-gradient(circle at 35% 50%, #ff5f00 0, #ff5f00 40%, #f79e1b 40%, #f79e1b 100%);
+}
+
+.logo-circle.visa {
+  background: #1a237e;
+}
+
+.pay-card-form {
+  border-radius: 10px;
+  border: 2px solid #0f2238;
+  padding: 18px 20px;
+  max-width: 520px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.pay-field {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.pay-field input,
+.pay-field select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd3e3;
+  font-size: 13px;
+}
+
+.pay-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pay-btn {
+  margin-top: 10px;
+  align-self: flex-start;
+  padding-inline: 26px;
+}
+
+/* === Separador === */
+.pay-divider {
+  margin: 26px 0 18px;
+  border: none;
+  border-top: 1px solid #e2e7f0;
+}
+
+/* === Sección PSE === */
+.pay-pse-section {
+  max-width: 720px;
+}
+
+.pay-pse-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.pse-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #153e90;
+}
+
+.pay-pse-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.pay-secure {
+  margin-top: 22px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* === Botones === */
+.btn {
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: 1px solid #0f2238;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: #0f2238;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* === Modal de éxito === */
+.pay-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 40;
+}
+
+.pay-modal {
+  background: #fff;
+  padding: 22px 20px;
+  border-radius: 10px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.pay-modal h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pay-modal p {
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+
+/* === Responsividad === */
+@media (max-width: 768px) {
+  .pay-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pay-total-box {
+    align-self: flex-end;
+  }
+
+  .pay-pse-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pay-container {
+    padding: 20px 12px 40px;
+    justify-content: flex-start; /* en móviles no centramos verticalmente */
+  }
+}
